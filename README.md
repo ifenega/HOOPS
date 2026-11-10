@@ -18,6 +18,18 @@ The full design is in [HOOPS_SPEC.md](HOOPS_SPEC.md).
 | Run | none | none or count-up | pickup games played to a target score |
 | Full Game | required | countdown, FIBA rules | real games with stats |
 
+## How phones connect
+
+Several phones can keep one game together over local wifi or a phone hotspot. No internet is needed. This is planned and not built yet (see Status).
+
+- **One phone hosts.** The host runs the clock and score, and shows a QR code plus a four-letter game code. Others join by scanning the QR or typing the code.
+- **Each stat has one owner.** Each phone claims stat groups such as fouls, rebounds or assists, and only that phone can record them. The host rejects anything else, so two phones never record the same thing and nothing needs merging.
+- **Every phone keeps the whole game.** Each action is saved on the phone that made it, sent to the host, numbered by the host, and passed to every other phone.
+- **The clock isn't streamed.** The host sends a message only when the clock starts or stops. Each phone counts down by itself, after correcting for the difference between its own clock and the host's.
+- **Dropped connections recover.** A phone that loses wifi keeps recording and sends its stats when it reconnects. It finds the host again by game code, even if the host's address has changed, and gets its stat groups back automatically. If the host disappears, another phone can take over, because every phone already has the full game.
+
+The full protocol is in sections 7 and 8 of the spec.
+
 ## Status
 
 The single-device scoreboard is in progress: clock, score, periods, team fouls, possession, timeouts and the LED-style display. Rosters, player stats, the multi-device wifi mode and export are planned. The build phases are listed in section 10 of the spec.
