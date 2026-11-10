@@ -2,6 +2,14 @@
 
 A basketball scoreboard and stats app for phones and tablets, built with Expo and React Native.
 
+## Why I built it
+
+I play in an evening league at our local basketball court. We have no proper scoreboard. The score lives in someone's head or on a phone calculator, and the clock is whoever remembers to check their watch. Stats are kept on paper: one person with a pen, trying to follow rebounds, assists and fouls for ten players at once. Sheets get smudged, totals get added up wrong, and some games never get recorded.
+
+I wanted something anyone at the court could pull out of their pocket. It had to work with the patchy signal we get there, show a score you can read from the bench, and let a few people share the stat-keeping instead of putting it all on one person with a clipboard. Hoops is that app.
+
+## What it does
+
 It is designed to:
 
 - work with **no internet at all**,
