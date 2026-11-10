@@ -2,6 +2,8 @@
 
 A basketball scoreboard and stats app for phones and tablets, built with Expo and React Native.
 
+> 🚧 **Still a work in progress.** Some features below are planned and not built yet. See [Status](#status) for what works today.
+
 ## Why I built it
 
 I play in an evening league at our local basketball court. We have no proper scoreboard. The score lives in someone's head or on a phone calculator, and the clock is whoever remembers to check their watch. Stats are kept on paper: one person with a pen, trying to follow rebounds, assists and fouls for ten players at once. Sheets get smudged, totals get added up wrong, and some games never get recorded.
