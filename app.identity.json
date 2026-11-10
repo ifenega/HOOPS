@@ -1,0 +1,7 @@
+{
+  "displayName": "Hoops",
+  "slug": "hoops",
+  "scheme": "hoops",
+  "bundleId": "co.getcarbon.hoops",
+  "storagePrefix": "hoops"
+}
